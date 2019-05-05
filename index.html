@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Xander Kaylan Portfolio</title>
+    <link rel="stylesheet" href="layout.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <ul class="navbar">
+            <li><a href="#top">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contactLink">Contact</a></li>
+            <li><a href="#resume">Résumé</a></li>
+        </ul>
+    </header>
+    <div class="aboutWrapper">
+        <a name="top"></a>
+        <section>
+            <h1>Xander Kaylan </h1>
+            <h2>Creative Developer</h2>
+        </section>
+        <img src="workExamples/AutonomousCars/Xander.jpg" id="xander" alt="Xander.jpg">
+        <div class="about">
+            <p>
+                My name is Xander Kaylan, and I've been writing code for several years now. Before RIT, I worked with
+                JavaScript combined with HTML. I used this to make the Party List Using Google Firebase project. At RIT,
+                I began doing JavaScript on its own, continued learning HTML, and started CSS. I used HTML/CSS to make
+                many websites, including the Problems with Autonomous Cars project.
+                Using only JavaScript I made the Genetic Algorithm of Hue Grids project. I then moved into C#, which I
+                used to create the C# Console App project. I hope to utilize everything
+                I've learned working as an interactive developer!
+            </p>
+        </div>
+    </div>
+    <a name="projects"></a>
+    <br>
+    <br>
+    <h1 id="projectH1">Examples of my work! </h1>
+    <div class="projectWrapper">
+
+        <div id="partyWrap">
+            <div class="party">
+                <img src="workExamples/PartyList/partyListSquare.png" class="projectPhoto" id="partyPhoto"
+                    alt="partyLink">
+            </div>
+            <div class="partyLabel">
+                <p>Party List Using Google Firebase <br> (JS & HTML) – Nov. 2016</p> <br>
+                <div class="projectLink">
+                    <a href="#partyList">More info</a>
+                </div>
+            </div>
+        </div>
+        <div id="carWrap">
+            <div class="car">
+                <img src="workExamples/AutonomousCars/IntroPageSquare.png" class="projectPhoto" id="carPhoto"
+                    alt="carProjPic">
+            </div>
+            <div class="carLabel">
+                <p>Problems with Autonomous Cars <br> (HTML/CSS) - Oct. 2017</p>
+                <br>
+                <div class="projectLink">
+                    <a href="#selfDrivingCar">More info</a>
+                </div>
+            </div>
+
+        </div>
+        <div id="genAWrap">
+            <div class="genA">
+                <img src="workExamples/GeneticAlgorithm/codingFiles/GAImageSquare.png" class="projectPhoto"
+                    id="genAPhoto" alt="genAPic">
+            </div>
+            <div class="genALabel">
+                <p>Genetic Algorithm of Hue Grids <br> (Solo JS) - Apr. 2018</p> <br>
+                <div class="projectLink">
+                    <a href="#genAlgorithm">More info</a>
+                </div>
+            </div>
+        </div>
+        <div id="csharpWrap">
+            <div class="csharp">
+                <img src="workExamples/20QCSharp/cSharpTitle.png" class="projectPhoto" id="cSharpPhoto"
+                    alt="cSharpProj">
+            </div>
+            <div class="csharpLabel">
+                <p>20 Questions Console App (C#) <br> - Nov. 2018</p> <br>
+                <div class="projectLink">
+                    <a href="#cSharp20Q">More info</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <a name="partyList"></a>
+    <br>
+    <br>
+    <h1 id="partyH1">Party List using Google Firebase</h1>
+    <div id="partyProject">
+        <div class="partyListImages">
+            <img src="workExamples/PartyList/partyList.png" id="partyListMain" alt="partyListProject">
+            <img src="workExamples/PartyList/database.png" id="partyListDatabase" alt="database">
+        </div>
+        <div id="partyListDescription">
+            <p>
+                This is a website I made in November 2016 that allows the user to enter their information if they want
+                to attend a party.
+                Their data is then stored in a database, the one I used was Google Firebase. The user can add their
+                info to the
+                database and then display the list (their info along with the list of people already in the database).
+                The user can also change their status using the checkbox.
+                The default is "Invited", but if the user wants to attend they click the checkbox and it says "Change
+                (Name + School) from invited to attending".
+                I used JavaScript to save the info in the database, display it on the screen, and update the status. I
+                used HTML to make the input boxes, the buttons, and the table containing the database list.
+            </p>
+        </div>
+        <ul class="linksToProject" id="partyLinks">
+            <li><a href="https://xxk3990.github.io/PartyList/partylist2.html">View project</a></li>
+            <li><a href="https://github.com/xxk3990/PartyList">View code</a></li>
+        </ul>
+    </div>
+    <a name="selfDrivingCar"></a>
+    <br>
+    <br>
+    <h1 id="carH1">Problems with Autonomous Cars</h1>
+    <div id="carProject">
+        <div class="carImages">
+            <img src="workExamples/AutonomousCars/IntroPageFull.png" id="carIntroPage" alt="intro">
+            <img src="workExamples/AutonomousCars/road.png" id="road" alt="problems on road">
+            <img src="workExamples/AutonomousCars/hacking.png" id="hacking" alt="hack">
+            <img src="workExamples/AutonomousCars/sources.png" id="sources" alt="references">
+        </div>
+        <div id="carProjDescription">
+            <p>
+                This is a project I made using HTML/CSS in October 2017 about the problems with Autonomous Cars. I made
+                an intro page, a page discussing the problems the car faces
+                on the road, a page discussing how Autonomous Cars can be hacked, and a sources page. On each page I
+                implemented body text, images with captions and
+                links to the image source, and links to the other pages. This was all done with HTML. CSS was used to
+                align the text, align the images, choose the font and all the colors.
+            </p>
+        </div>
+        <ul class="linksToProject" id="carLinks">
+            <li><a href="https://xxk3990.github.io/AutonomousCars/index.html">View project</a></li>
+            <li><a href="https://github.com/xxk3990/AutonomousCars">View code</a></li>
+        </ul>
+    </div>
+    <a name="genAlgorithm"></a>
+    <br>
+    <br>
+    <br>
+    <h1 id="genH1">Genetic Algorithm of Hue Grids</h1>
+    <div id="genProject">
+        <div class="genImage">
+            <img src="workExamples/GeneticAlgorithm/codingFiles/GAImage.png" id="genMain" alt="genAProject">
+        </div>
+        <div id="genDescription">
+            <p>
+                This is a project I made in April 2018 in which I wrote code that applied different processes in
+                Genetics to a set of 9 hue grids. I did
+                mutation, crossover, selection, and breeding (either the first grid or 9 new ones). The hue grids
+                themselves have different designs that I chose to implement.
+                I have a range of red, a range of blue, a range of green, and a rainbow color. Each color has a random
+                layout, a vertical stripe layout, a horizontal stripe layout,
+                and a gradient.
+                The muation takes the first grid and mutates it, the crossover takes the first grid and crosses it with
+                another random grid, the select1 takes the first grid and does selection on it, the breed1 breeds a new
+                grid in the first spot,
+                and the breed gen breeds a whole new generation of huegrids that are "children" of the 1st grid,
+                inheriting "chromosomes" from it. You can also adjust the rate at which
+                each square in the hue grid changes and the transparency. This was all done using a JavaScript library
+                called P5.
+            </p>
+        </div>
+        <ul class="linksToProject" id="genLinks">
+            <li><a href="https://xxk3990.github.io/genAlgorithm/codingFiles/index.html">View project</a></li>
+            <li><a href="https://github.com/xxk3990/genAlgorithm">View code</a></li>
+        </ul>
+    </div>
+    <a name="cSharp20Q"></a>
+    <br>
+    <br>
+    <br>
+    <h1 id="cSharpH1">20 Questions C# Console App</h1>
+    <div id="cSharpProject">
+        <div class="cSharpVideo">
+            <video src="workExamples/20QCSharp/gameplay.mp4" controls></video>
+        </div>
+        <div id="cSharpDescription">
+            <p>
+                This is a C# console app I made in November 2018 that allows the user to play 20 questions. The project
+                uses File.IO to store names/clues in an external file. Before the game starts,
+                there are three things in the file. The first is a clue and the other two are guesses.
+                The project uses a Binary Search Tree that has each clue as a branch node and the leaf nodes are names
+                of people. The tree also allows the computer to go through and make
+                decisions based on user input and where it is in the tree.
+                The game begins with the computer asking if it is living.
+                The user can then enter either yes or no, and the computer will make the guess based on user response.
+                If the answer to the guess is no, the computer will ask who the user was thinking of, and then ask them
+                what the difference between the two are.
+                Once you enter that, the computer uses recursion to add the new names and clues to their correct place
+                on the tree. In the next game, it will ask you the difference you inputted and then make a guess based
+                on that (depending on what you say,
+                it could also guess the new person you entered). Once you quit the project, those new names and
+                differences are saved to the file.
+            </p>
+        </div>
+        <ul class="linksToProject" id="cSharpLink">
+            <li><a href="https://github.com/xxk3990/20QCSharp">View code</a></li>
+        </ul>
+    </div>
+    <a name="contactLink"></a>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1 id="contactH1">Contact Info!</h1>
+    <div id="contact">
+        <ul class="profiles">
+            <li>Email: xxk3990@rit.edu</li>
+            <li><a href="https://www.linkedin.com/in/xander-kaylan-74001614a/">LinkedIn</a></li>
+            <li>Instagram: @xanderkaylan</li>
+            <li>Want to email me directly? Click here for a contact form: </li>
+            <li><a href="https://people.rit.edu/xxk3990/230/portfolio/contact.php">PHP Contact Form!</a></li>
+        </ul>
+    </div>
+    <a name="resume"></a>
+    <br>
+    <br>
+    <h1 id="resumeH1">Résumé</h1>
+    <div id="res">
+            <div id="downloadRes">
+                    <a href="Xander_Kaylan_Resume.pdf" download="Xander_Kaylan_Resume">Download</a>
+                </div>
+        <object name="Xander_Kaylan_Resume" data="Xander_Kaylan_Resume.pdf" type="application/pdf" width="900"
+            height="700"></object>
+    </div>
+
+</body>
+
+</html>
